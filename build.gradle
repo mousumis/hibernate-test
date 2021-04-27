@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.appian'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.hibernate:hibernate-core:3.6.3.Final'
+    implementation 'mysql:mysql-connector-java:5.1.49'
+    implementation 'org.slf4j:slf4j-api'
+    implementation 'org.slf4j:slf4j-simple:1.6.1'
+    implementation 'org.javassist:javassist:3.22.0-GA'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
